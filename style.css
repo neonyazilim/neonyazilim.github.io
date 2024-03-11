@@ -84,6 +84,11 @@ img {
 	right: auto;
 	display: inline-block;
 }
+@media screen and (max-width:1000px) {
+	.cards {
+		grid-template-columns: repeat(1,1fr);
+	}
+}
 @media screen and (min-width: 100px) {
 	.branding {
 		font-size: 43vw;
