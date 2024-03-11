@@ -1,15 +1,209 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<!--11.03.2024 18:06 Neon Yazılım-->
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neon Yazılım</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="n.ico" type="image/x-icon" />
+    <meta name="description" content="2024 yılında kurulmuş olan Neon Yazılım. Müşterilerin tüm yazılımsal ihtiyaçlarına cevap vermektedir. Eğer ihtiyaçlarınıza uygun bir program bulamazsanız biz yazarız. Eğer elimizde ihtiyacınıza uygun bir program var ise size lisanslarız." />
+    <meta name="keywords" content="neon yazılım,neonyazılım,neon yazılım,neon program,neon,yazılım,program yazdırma,ücretli program yazdırma,kişiye özel yazılım,ihtiyaca özel yazılım,yazılım ihtiyacı,telegram,telegram remote access bot,telegram uzaktan erişim botu,uzaktan erişim botu" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Yazılım</title>
+	<style type="text/css">
+
+
+		li {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			float: left;
+			margin: 0px;
+			padding: 0px; /* this will be applied internally, due to
+box-sizing property */
+			text-align: center;
+			overflow: hidden;
+			/*margin-left:-1%;
+padding-top:-1%;*/
+		}
+
+			li:nth-child(100n) {
+				clear: left;
+			}
+
+		.yatay_Liste_flex {
+			display: inline-flex;
+			gap: 5px;
+			/*overflow:auto;
+		overflow-y:hidden;*/
+			white-space: nowrap;
+			margin-top: -2vw;
+			margin-left: -1vw;
+			/*overflow-x: scroll;*/
+		}
+
+		.logo {
+			font-size: 200px;
+			line-height: 300px;
+			font-weight: bold;
+			text-transform: lowercase;
+			/*background: url("Eyes.jpg");*/
+			-webkit-background-clip: border-box;
+			-webkit-text-fill-color: transparent;
+			/*-webkit-mask-image: url("Eyes.jpg");*/
+			/*mask-image: url("Eyes.jpeg");*/
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		.logo_kutu {
+			/*Sonradan*/
+			display:block flow-root;
+			flex-wrap:initial;
+			order: 1;
+			position:absolute;
+			text-align: center;
+			color: rgb(76, 229, 100);
+			font-size: 10vw;
+			margin-top: 0%;
+			margin-left:22%;
+			left: auto;
+			right: auto;
+			display:inline-block;
+		}
+
+		.logo_tamOrtala {
+			position: absolute;
+			margin-top: -15%;
+			left: 50%;
+			transform: translate(-50%, -60%);
+		}
+
+		html {
+			/*background: url(Arkaplan.png) no-repeat right center fixed;
+			;*/
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			backgro0nd-position: relative;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow-y: hidden;
+			overflow-x: auto;
+		}
+
+		body {
+			font-family: "Georgia", "Times New Roman", "Times New Roman";
+			color: rgba(255, 255, 255,1);
+			background-color: rgb(59, 59, 59);
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			height: 99.4%;
+			width: 98.4%;
+			position: relative;
+			margin:auto;
+			padding:10px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			bottom: 0vw;
+			top: 0vw;
+			right: 0vw;
+			left: 0vw;
+			overflow: hidden;
+			border-radius: 1vw;
+			padding: 0px;
+			border: 4px solid rgb(59, 59, 59);
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+
+		.alt_Bilgi {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #0F0000;
+			text-align: center;
+			padding: 5px 0;
+			display: inline-block;
+		}
+
+		.kaykayAnimasyonu {
+			/*white-space: nowrap;
+  		overflow: hidden;
+  		display: inline-block;*/
+			animation: kaykayAnimasyonu 30s linear infinite;
+		}
+
+		@keyframes kaykayAnimasyonu {
+			0% {
+				transform: translate3d(70%, 0, 0);
+			}
+
+			100% {
+				transform: translate3d(-70%, 0, 0);
+			}
+		}
+
+		.alt_Menu {
+			position: absolute;
+			left: 5vw;
+			top: 42vw;
+			width: 89%;
+			height: 11vw;
+			white-space: nowrap; /* önemli bu scrollu duzeltti*/
+			background-color: rgba(255,0,4,0.50);
+			text-align: center;
+			/*padding: 2% 0% -10% 0%;*/
+			display: inline-block;
+			border-radius: 10px;
+			padding: 0px;
+			border: 4px solid #000000;
+			/*Because*/
+			overflow-x: auto;
+			overflow-y: hidden;
+		}
+
+		.alt_Menu_MiniKutu {
+			display: inline-flex;
+			width: 15vw;
+			height: 20%;
+			flex: 0 0 10px;
+			align-items: flex-start;
+			font-size: 2.3vw;
+			justify-content: center;
+			text-align: center;
+			margin-right: 1px;
+			margin-top: 4vw;
+			background-color: rgba(66,0,47,0.85);
+			border-radius: 15px;
+			padding-top: 1vw;
+			padding-bottom: 2vw;
+			padding-left: -1vw;
+			padding-right: 0vw;
+			border: 2px solid #000000;
+			overflow: hidden;
+		}
+
+		a {
+			color: #FFFFFF;
+			text-decoration: none;
+			text-align: center;
+		}
+
+	</style>
 </head>
-
 <body>
-Neon Yazılım 2024 Yapım Aşamasındadır!
+    <br /><div class="logo_kutu">Neon Yazılım</div> 
+    <br />
 </body>
-
 </html>
